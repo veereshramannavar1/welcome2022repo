@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to 2022</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get user agent information
+            var userAgent = navigator.userAgent;
+
+            // Display the welcome message and user agent information
+            var welcomeMessage = document.getElementById("welcome-message");
+            welcomeMessage.textContent = "Welcome to 2022";
+
+            var userAgentInfo = document.getElementById("user-agent-info");
+            userAgentInfo.textContent = "Your User Agent: " + userAgent;
+        });
+    </script>
+</head>
+<body>
+    <h1 id="welcome-message"></h1>
+    <p id="user-agent-info"></p>
+</body>
+</html>
